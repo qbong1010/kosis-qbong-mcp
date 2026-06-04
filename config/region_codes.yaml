@@ -1,0 +1,7 @@
+national:
+  code: "00"
+  name: "전국"
+gangneung:
+  code: "32030"
+  name: "강릉시"
+  province: "강원특별자치도"

@@ -1,0 +1,46 @@
+source_type: local_gov
+source_org: 강릉시
+province: 강원특별자치도
+survey_name: 강릉시 사업체조사 결과
+survey_year: 2024
+reference_year: 2023
+region_code: '32030'
+region_name: 강릉시
+raw_files:
+- file_name: 1 산업세세분류별 총괄.xlsx
+  relative_path: raw/1 산업세세분류별 총괄.xlsx
+  size_bytes: 390296
+  sha256: a1513aa450389143d1029ed9de180457d22f1d69e20378ffbd1fdf548179ba2c
+- file_name: 2 산업소분류 및 읍면동별 사업체수, 종사자수.xlsx
+  relative_path: raw/2 산업소분류 및 읍면동별 사업체수, 종사자수.xlsx
+  size_bytes: 88214
+  sha256: c3bd4d9e4218d0076f17198aee92c5585bbd76265a9a0b9de467edf916542c65
+- file_name: 3 산업중분류, 종사자규모 및 읍면동별 사업체수, 종사자수.xlsx
+  relative_path: raw/3 산업중분류, 종사자규모 및 읍면동별 사업체수, 종사자수.xlsx
+  size_bytes: 186584
+  sha256: 8426a3ca4c522e4beb6c03a176a55e962ae1523b985b409235c792e7650adac2
+- file_name: 4 산업중분류, 사업체구분 및 읍면동별 사업체수, 종사자수.xlsx
+  relative_path: raw/4 산업중분류, 사업체구분 및 읍면동별 사업체수, 종사자수.xlsx
+  size_bytes: 92307
+  sha256: 3811ac9c49ff0f33bc8d1c911f66f415a645724d2ae1bde4d1cb4c0c8bcd0137
+- file_name: 5 산업중분류, 조직형태 및 읍면동별 사업체수, 종사자수.xlsx
+  relative_path: raw/5 산업중분류, 조직형태 및 읍면동별 사업체수, 종사자수.xlsx
+  size_bytes: 101419
+  sha256: cd48b57a705a5f6c1ad5643dd22aa64578397a182f2061cea7d0e954b6fca12a
+- file_name: 6 산업중분류, 종사상지위 및 읍면동별 종사자수.xlsx
+  relative_path: raw/6 산업중분류, 종사상지위 및 읍면동별 종사자수.xlsx
+  size_bytes: 70215
+  sha256: 434a81746252b540c7516e0325909534919d31f28a61cd079736567672f6cdc2
+- file_name: 7 산업중분류, 대표자남여 및 읍면동별 사업체수.xlsx
+  relative_path: raw/7 산업중분류, 대표자남여 및 읍면동별 사업체수.xlsx
+  size_bytes: 39648
+  sha256: 41e1f5732f4ed90dd6b9e7269400aa651d6ba2e7c1f2b46414e91e005e702384
+- file_name: 8 산업중분류, 종사자남여 및 읍면동별 종사자수.xlsx
+  relative_path: raw/8 산업중분류, 종사자남여 및 읍면동별 종사자수.xlsx
+  size_bytes: 41527
+  sha256: 7f693ce2d571ae67f67d5a89cffbc3f596d0d52de711474f4dc2f4702d6ce881
+- file_name: 9 산업중분류, 대표자연령대 및 읍면동별 사업체수, 종사자수.xlsx
+  relative_path: raw/9 산업중분류, 대표자연령대 및 읍면동별 사업체수, 종사자수.xlsx
+  size_bytes: 123067
+  sha256: a03bc5084e64c97481462637286933681e2d6272248878f54a5ba883d4bd23c6
+storage_policy: raw xlsx is immutable; analysis uses normalized DuckDB/Parquet tables

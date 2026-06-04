@@ -1,0 +1,40 @@
+industrial_business_survey:
+  name: "시도/산업/사업체구분별 사업체수, 종사자수"
+  org_id: "101"
+  tbl_id: "DT_1K52F01"
+  period: "Y"
+  dimensions:
+    region: "objL1"
+    industry: "objL2"
+    establishment_type: "objL3"
+    item: "itmId"
+  fixed_dimensions:
+    establishment_type: "0"
+  indicators:
+    establishments:
+      name: "사업체 수"
+      item_id: "T1"
+      unit: "개"
+    employees:
+      name: "종사자 수"
+      item_id: "T2"
+      unit: "명"
+
+mining_manufacturing_survey_10plus:
+  name: "시도(시군구)/산업분류별 주요지표(10명 이상)"
+  org_id: "101"
+  tbl_id: "DT_1FS1101"
+  period: "Y"
+  dimensions:
+    region: "objL1"
+    industry: "objL2"
+    item: "itmId"
+  indicators:
+    establishments:
+      name: "사업체 수"
+      item_id: "T01"
+      unit: "개"
+    employees:
+      name: "종사자 수"
+      item_id: "T02"
+      unit: "명"

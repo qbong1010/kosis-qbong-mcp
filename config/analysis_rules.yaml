@@ -1,0 +1,33 @@
+lq:
+  thresholds:
+    specialized: 1.25
+    average: 1.0
+    weak: 0.75
+growth:
+  default_period: 5
+  method: "simple_growth_rate"
+  min_base_value: 10
+classification:
+  leading:
+    lq_min: 1.0
+    growth_min: 0
+  emerging:
+    lq_max: 1.0
+    growth_min: 0
+  mature:
+    lq_min: 1.0
+    growth_max: 0
+  declining:
+    lq_max: 1.0
+    growth_max: 0
+quality_rules:
+  require_same_year: true
+  require_same_unit: true
+  require_same_indicator: true
+  require_same_industry_level: true
+  missing_value_policy: "exclude_with_warning"
+  suppressed_value_policy: "exclude_with_warning"
+  small_sample_warning:
+    employees_min: 50
+    establishments_min: 5
+

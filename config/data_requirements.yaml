@@ -1,0 +1,35 @@
+gangneung_lq_verified:
+  purpose: "강릉시 제조업 중분류 LQ/ITA 분석"
+  required_before_analysis:
+    - "전국과 강릉의 기준연도 데이터가 모두 있어야 한다."
+    - "전국과 강릉의 산업분류 수준이 제조업 중분류로 같아야 한다."
+    - "사업체수와 종사자수를 혼합하지 않는다."
+    - "비공표값은 0으로 처리하지 않는다."
+    - "성장률 시작연도를 요청하면 전국과 강릉 모두 해당 연도 데이터가 있어야 한다."
+  national_source:
+    source_type: "KOSIS"
+    org_id: "101"
+    tbl_id: "DT_1K52F01"
+    table_name: "시도/산업/사업체구분별 사업체수, 종사자수"
+    required_dimensions:
+      objL1: "00"
+      objL2: "C and C10-C34"
+      objL3: "0"
+      itmId:
+        establishments: "T1"
+        employees: "T2"
+  local_source:
+    source_type: "local_gov"
+    store: "data/processed/local_business_survey.duckdb"
+    canonical_table_no: 3
+    required_dimensions:
+      region_name: "강릉시"
+      admin_area_name: "강릉시"
+      breakdown_value: "전체"
+      industry_code: "C and C10-C34"
+      indicators:
+        - "establishments"
+        - "employees"
+  if_missing:
+    action: "do_not_analyze"
+    response: "필요 데이터와 대안을 구조화해서 사용자에게 요청한다."
